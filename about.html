@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digispect Technologies</title>
+    <style>
+        body,
+        h1,
+        p,
+        a {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        
+        header {
+            background: #ffffff;
+            /* White background */
+            color: #007bff;
+            /* Blue text */
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            text-align: center;
+        }
+        
+        .header-container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: #007bff;
+            /* Ensure text color is blue */
+        }
+        
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+        }
+        
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        
+        nav ul li {
+            margin-left: 20px;
+        }
+        
+        nav ul li a {
+            color: #007bff;
+            /* Blue links */
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: #0056b3;
+            /* Darker blue on hover */
+        }
+        
+        .hero {
+            padding: 120px 20px 80px;
+            text-align: center;
+            background: #ffffff;
+            margin-top: 80px;
+            /* Adjust for fixed header */
+        }
+        
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            padding: 20px;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .card {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 350px;
+            box-sizing: border-box;
+            text-align: justify;
+            /* Ensure text is justified */
+            margin: 0 auto;
+            /* Center align cards horizontally */
+        }
+        
+        .card h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #007bff;
+            /* Blue header */
+        }
+        
+        .card p {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 10px;
+            /* Space between paragraphs */
+            line-height: 1.6;
+            /* Improve readability */
+        }
+        
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            nav ul {
+                flex-direction: column;
+                margin-top: 20px;
+            }
+            nav ul li {
+                margin: 10px 0;
+            }
+            .hero h1 {
+                font-size: 28px;
+            }
+            .card {
+                max-width: 90%;
+                margin: 0 auto;
+            }
+        }
+        
+        footer {
+            background: #ffffff;
+            color: #333;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        footer p {
+            margin: 10px 0;
+            font-size: 14px;
+        }
+        
+        footer p a {
+            color: #007bff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        footer p a:hover {
+            color: #007bff;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">Digispect Technologies</div>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="technologies.html">Technologies</a></li>
+                    <li><a href="references.html">References</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="container">
+            <div class="card">
+                <h2>Who We Are</h2>
+                <p>At Digispect Technologies, we are dedicated to pioneering innovation in the digital landscape. Founded with a vision to drive digital transformation across industries, we specialize in delivering cutting-edge technology solutions that
+                    empower businesses to achieve their full potential. Digispect Technologies is a leading innovator in technology solutions, committed to delivering cutting-edge digital services that drive business success. As a premier provider in
+                    the tech industry, Digispect Technologies specializes in offering advanced IT solutions, including software development, IT consulting, and system integration. At Digispect Technologies, we pride ourselves on delivering results that
+                    not only meet but exceed industry standards.</p>
+            </div>
+            <div class="card">
+                <h2>Our Mission</h2>
+                <p>Our mission is to create a seamless and sustainable digital ecosystem. We strive to provide unparalleled technology services and products that not only meet but exceed the evolving needs of our clients. We are committed to fostering a
+                    culture of excellence, integrity, and continuous improvement. At Digispect Technologies, our mission is to empower businesses and organizations by providing innovative, high-quality technology solutions that drive efficiency, enhance
+                    performance, and foster growth. We are dedicated to delivering cutting-edge software, consulting, and IT services tailored to the unique needs of our clients. Our focus is on harnessing the latest advancements in technology to create
+                    solutions that are not only effective but also adaptable and scalable.</p>
+            </div>
+            <div class="card">
+                <h2>Our Values</h2>
+                <p><strong>Integrity:</strong> We conduct our business with the highest level of integrity, ensuring transparency and honesty in all our dealings.</p>
+                <p><strong>Innovation:</strong> We foster a culture of creativity and innovation, constantly seeking new ways to solve problems and improve our offerings.</p>
+                <p><strong>Collaboration:</strong> We believe in the power of teamwork and collaborate closely with our clients and partners to achieve shared goals.</p>
+                <p><strong>Customer Satisfaction:</strong> Our success is measured by the satisfaction and success of our clients. We go above and beyond to ensure our clients are delighted with our services.</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>Contact us at: <a href="mailto:info@digispect.com">info@digispect.com</a></p>
+        <!-- <p>Follow us on social media: [Social Media Links]</p> -->
+    </footer>
+</body>
+
+</html>

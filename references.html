@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>References - Digispect Technologies</title>
+    <style>
+        body,
+        h1,
+        p,
+        a {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        
+        header {
+            background: #ffffff;
+            /* White background */
+            color: #007bff;
+            /* Blue text */
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            text-align: center;
+        }
+        
+        .header-container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: #007bff;
+            /* Ensure text color is blue */
+        }
+        
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+        }
+        
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        
+        nav ul li {
+            margin-left: 20px;
+        }
+        
+        nav ul li a {
+            color: #007bff;
+            /* Blue links */
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: #0056b3;
+            /* Darker blue on hover */
+        }
+        
+        .content {
+            padding: 120px 20px 80px;
+            /* Adjust for fixed header */
+            background: #ffffff;
+            text-align: center;
+        }
+        
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            padding: 20px;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .reference {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 350px;
+            box-sizing: border-box;
+            text-align: left;
+            /* Align text to the left for readability */
+            margin: 0 auto;
+            /* Center align cards horizontally */
+        }
+        
+        .reference h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #007bff;
+            /* Blue header */
+        }
+        
+        .reference p {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 10px;
+            /* Space between paragraphs */
+            line-height: 1.6;
+            /* Improve readability */
+        }
+        
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            nav ul {
+                flex-direction: column;
+                margin-top: 20px;
+            }
+            nav ul li {
+                margin: 10px 0;
+            }
+            .reference {
+                max-width: 90%;
+                margin: 0 auto;
+            }
+        }
+        
+        footer {
+            background: #ffffff;
+            color: #333;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        footer p {
+            margin: 10px 0;
+            font-size: 14px;
+        }
+        
+        footer p a {
+            color: #007bff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        footer p a:hover {
+            color: #007bff;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">Digispect Technologies</div>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="technologies.html">Technologies</a></li>
+                    <li><a href="references.html">References</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="content">
+        <h1>References</h1>
+        <div class="container">
+            <div class="reference">
+                <h2>Client Testimonial</h2>
+                <p><strong>Jane Doe</strong>, CEO of Tech Innovations: "Digispect Technologies provided us with outstanding service and innovative solutions. Their expertise helped us streamline our operations and achieve significant growth."</p>
+            </div>
+            <div class="reference">
+                <h2>Case Study: Project Alpha</h2>
+                <p>We partnered with Digispect Technologies to develop Project Alpha, which resulted in a 40% increase in operational efficiency. Their approach was thorough and highly effective, demonstrating their deep understanding of our needs.</p>
+            </div>
+            <div class="reference">
+                <h2>Award: Best IT Solutions Provider</h2>
+                <p>Digispect Technologies was recognized as the Best IT Solutions Provider in 2024. This award highlights our commitment to excellence and innovation in the technology sector.</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>Contact us at: <a href="mailto:info@digispect.com">info@digispect.com</a></p>
+        <!-- <p>Follow us on social media: [Social Media Links]</p> -->
+    </footer>
+</body>
+
+</html>

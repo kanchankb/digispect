@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #fff;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    background-color: #1a1a1a;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #091236, #1E215D);
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.hero .cta-buttons .btn {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    background-color: #4A90E2;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.services,
+.technologies,
+.about-us,
+.references,
+.contact {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.services h2,
+.technologies h2,
+.about-us h2,
+.references h2,
+.contact h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.service-cards,
+.technology-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service-card,
+.technology-card {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    width: calc(25% - 40px);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.service-card:hover,
+.technology-card:hover {
+    transform: scale(1.05);
+    background-color: #333;
+}
+
+footer {
+    background-color: #1a1a1a;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 5px 0;
+}

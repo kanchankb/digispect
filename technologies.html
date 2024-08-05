@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digispect Technologies Pvt Ltd</title>
+    <style>
+        /* Reset default styles */
+        
+        body,
+        h1,
+        h2,
+        p,
+        a,
+        ul,
+        li {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* General styles */
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+            margin: 0;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        /* Header styles */
+        
+        header {
+            background: #ffffff;
+            color: #007bff;
+            padding: 20px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            transition: background-color 0.3s ease;
+        }
+        
+        header.scrolled {
+            background: #f1f1f1;
+        }
+        
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #007bff;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            padding: 0;
+            margin-left: auto;
+        }
+        
+        nav ul li {
+            margin-left: 20px;
+        }
+        
+        nav ul li a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+            position: relative;
+        }
+        
+        nav ul li a:hover {
+            color: #0056b3;
+        }
+        
+        nav ul li a::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: #007bff;
+            transition: width 0.3s;
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+        }
+        
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+        /* Hero section styles */
+        
+        .hero {
+            background: url('https://source.unsplash.com/1600x900/?technology') no-repeat center center/cover;
+            color: #fff;
+            padding: 150px 0;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.6);
+            z-index: -1;
+        }
+        
+        .hero h1 {
+            font-size: 50px;
+            margin-bottom: 20px;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            animation: fadeIn 2s ease-out;
+        }
+        
+        .hero p {
+            font-size: 24px;
+            margin-bottom: 30px;
+            animation: fadeIn 2s ease-out 0.5s;
+        }
+        
+        .cta-buttons {
+            margin-top: 20px;
+            animation: fadeIn 2s ease-out 1s;
+        }
+        
+        .cta-buttons .btn {
+            display: inline-block;
+            padding: 14px 28px;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 30px;
+            margin: 0 10px;
+            font-weight: 500;
+            transition: background 0.3s, transform 0.3s;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .cta-buttons .btn-primary {
+            background: #007bff;
+        }
+        
+        .cta-buttons .btn-secondary {
+            background: #6c757d;
+        }
+        
+        .cta-buttons .btn-primary:hover {
+            background: #0056b3;
+            transform: translateY(-3px);
+        }
+        
+        .cta-buttons .btn-secondary:hover {
+            background: #5a6268;
+            transform: translateY(-3px);
+        }
+        /* Hero Section Animations */
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        /* Technologies section styles */
+        
+        .technologies {
+            background: #ffffff;
+            padding: 80px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .technologies::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 200%;
+            height: 100%;
+            background: #f4f4f4;
+            z-index: -1;
+            transform: translateX(-50%) rotate(3deg);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .technologies h2 {
+            font-size: 36px;
+            margin-bottom: 40px;
+            color: #333;
+        }
+        
+        .technology-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        
+        .technology-card {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+        }
+        
+        .technology-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+        
+        .technology-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0));
+            opacity: 0.5;
+            z-index: 0;
+            pointer-events: none;
+        }
+        
+        .technology-card div {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .technology-card .icon {
+            font-size: 40px;
+            margin-right: 15px;
+            color: #007bff;
+        }
+        /* Footer styles */
+        
+        footer {
+            background: #ffffff;
+            color: #333;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        footer p {
+            margin: 10px 0;
+            font-size: 14px;
+        }
+        
+        footer p a {
+            color: #007bff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        footer p a:hover {
+            color: #007bff;
+        }
+        
+        .social-links {
+            margin-top: 10px;
+        }
+        
+        .social-links a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 20px;
+            transition: color 0.3s;
+        }
+        
+        .social-links a:hover {
+            color: #007bff;
+        }
+        /* Responsive styles */
+        
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+                margin-top: 10px;
+            }
+            nav ul li {
+                margin: 5px 0;
+            }
+            .cta-buttons {
+                display: block;
+            }
+            .cta-buttons .btn {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="logo">Digispect Technologies</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="technologies.html">Technologies</a></li>
+                    <li><a href="references.html">References</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>Innovating the Future of Technology</h1>
+        <p>Explore our cutting-edge solutions and services</p>
+        <div class="cta-buttons">
+            <a href="services.html" class="btn btn-primary">Our Services</a>
+            <a href="contact.html" class="btn btn-secondary">Contact Us</a>
+        </div>
+    </section>
+
+    <section class="technologies">
+        <div class="container">
+            <h2>Technologies We Use</h2>
+            <div class="technology-cards">
+                <div class="technology-card">
+                    <div class="icon">📱</div>
+                    <div>Mobile: iOS, Android, React Native, Flutter</div>
+                </div>
+                <div class="technology-card">
+                    <div class="icon">💻</div>
+                    <div>Frontend: Angular, React.js, HTML5, CSS3, JavaScript</div>
+                </div>
+                <div class="technology-card">
+                    <div class="icon">🔙</div>
+                    <div>Backend: PHP, Node.js, .NET, Python</div>
+                </div>
+                <div class="technology-card">
+                    <div class="icon">🛒</div>
+                    <div>Ecommerce and CMS: WordPress, MongoDB</div>
+                </div>
+                <div class="technology-card">
+                    <div class="icon">🗂️</div>
+                    <div>Frameworks: MEAN, MERN</div>
+                </div>
+                <div class="technology-card">
+                    <div class="icon">🤖</div>
+                    <div>AI & Machine Learning</div>
+                </div>
+                <div class="technology-card">
+                    <div class="icon">☁️</div>
+                    <div>Cloud: AWS, Azure</div>
+                </div>
+                <div class="technology-card">
+                    <div class="icon">📊</div>
+                    <div>Data Analytics: Power BI, QlikView</div>
+                </div>
+                <div class="technology-card">
+                    <div class="icon">🔍</div>
+                    <div>Testing: Selenium, Cypress</div>
+                </div>
+                <div class="technology-card">
+                    <div class="icon">🔗</div>
+                    <div>API: Postman, SoapUI</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Contact us at: <a href="mailto:info@digispect.com">info@digispect.com</a></p>
+        <!-- <p>Follow us on social media: [Social Media Links]</p> -->
+    </footer>
+</body>
+
+</html>

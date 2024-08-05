@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digispect Technologies Pvt Ltd</title>
+
+    <link rel="stylesheet" type="text/css" href="about.css" />
+    <link rel="stylesheet" type="text/css" href="services.css" />
+    <link rel="stylesheet" type="text/css" href="technologies.css" />
+    <link rel="stylesheet" type="text/css" href="refrences.css" />
+    <link rel="stylesheet" type="text/css" href="contact.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        /* Reset default styles */
+        
+        body,
+        h1,
+        p,
+        a {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* General styles */
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: white;
+            background-color: #e9ecef;
+            margin: 0;
+        }
+        /* Header styles */
+        
+        header {
+            background: #ffffff;
+            color: white;
+            padding: 20px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .technology-card {
+            color: black;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            text-align: center;
+        }
+        
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #007bff;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            padding: 0;
+        }
+        
+        nav ul li {
+            margin-left: 20px;
+        }
+        
+        nav ul li a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: #0056b3;
+        }
+        /* Hero section styles */
+        
+        .hero {
+            background: #f8f9fa;
+            /* color: #333; */
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        
+        .hero p {
+            font-size: 18px;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+        
+        .cta-buttons {
+            margin-top: 20px;
+        }
+        
+        .cta-buttons .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            margin: 0 10px;
+            font-weight: 500;
+            transition: background 0.3s;
+        }
+        
+        .cta-buttons .btn-primary {
+            background: #007bff;
+        }
+        
+        .cta-buttons .btn-secondary {
+            background: #6c757d;
+        }
+        
+        .cta-buttons .btn-primary:hover {
+            background: #0056b3;
+        }
+        
+        .cta-buttons .btn-secondary:hover {
+            background: #5a6268;
+        }
+        /* Footer styles */
+        
+        footer {
+            background: #ffffff;
+            color: #333;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        footer p {
+            margin: 10px 0;
+            font-size: 14px;
+        }
+        
+        .hero h3 {
+            font-size: 28px;
+            color: #ffffff;
+            font-weight: 700;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        
+        .services h3 {
+            font-size: 28px;
+            color: #ffffff;
+            font-weight: 700;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        
+        .content h1 {
+            font-size: 28px;
+            color: #000000;
+            font-weight: 700;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        
+        footer p a {
+            color: #007bff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        footer p a:hover {
+            color: #0056b3;
+        }
+        /* Responsive styles */
+        
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+                margin-top: 10px;
+            }
+            nav ul li {
+                margin: 5px 0;
+            }
+            .cta-buttons {
+                display: block;
+            }
+            .cta-buttons .btn {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">Digispect Technologies</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="technologies.html">Technologies</a></li>
+                    <li><a href="references.html">References</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Empowering Safe Digital Experiences</h1>
+            <p>Providing top-notch IT solutions and cybersecurity services to protect your digital world.</p>
+            <div class="cta-buttons">
+                <a href="services.html" class="btn btn-primary">Learn More</a>
+                <a href="contact.html" class="btn btn-secondary">Get Started</a>
+            </div>
+        </div>
+    </section>
+    <section class="hero">
+        <h3>About us</h3>
+        <div class="container">
+
+            <div class="card">
+
+                <h2>Who We Are</h2>
+                <p>At Digispect Technologies, we are dedicated to pioneering innovation in the digital landscape. Founded with a vision to drive digital transformation across industries, we specialize in delivering cutting-edge technology solutions that
+                    empower businesses to achieve their full potential. Digispect Technologies is a leading innovator in technology solutions, committed to delivering cutting-edge digital services that drive business success. As a premier provider in
+                    the tech industry, Digispect Technologies specializes in offering advanced IT solutions, including software development, IT consulting, and system integration. At Digispect Technologies, we pride ourselves on delivering results.</p>
+            </div>
+            <div class="card">
+                <h2>Our Mission</h2>
+                <p>Our mission is to create a seamless. We strive to provide unparalleled technology services. We are committed to fostering a culture of excellence, integrity, and continuous improvement. At Digispect Technologies, our mission is to empower
+                    businesses and organizations by providing innovative, high-quality technology solutions that drive efficiency, enhance performance, and foster growth. We are dedicated to delivering cutting-edge software, consulting, and IT services
+                    tailored to the unique needs of our clients. Our focus is on harnessing the latest advancements in technology to create solutions that are not only effective.</p>
+            </div>
+            <div class="card">
+                <h2>Our Values</h2>
+                <br>
+                <p><strong>Integrity:</strong> We conduct our business with the highest level of integrity, ensuring transparency and honesty in all our dealings.</p>
+                <p><strong>Innovation:</strong> We foster a culture of creativity and innovation, constantly seeking new ways to solve problems and improve our offerings.</p>
+                <p><strong>Collaboration:</strong> We believe in the power of teamwork and collaborate closely with our clients and partners to achieve shared goals.</p>
+                <p><strong>Customer Satisfaction:</strong> Our success is measured by the satisfaction and success of our clients. We go above and beyond to ensure our clients are delighted with our services.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="services">
+        <h2>Our Services</h2>
+        <div class="container">
+
+            <div class="service-cards">
+                <div class="service-card">Consulting</div>
+                <div class="service-card">Cloud and Infrastructure</div>
+                <div class="service-card">Data & Analytics</div>
+                <div class="service-card">Web Development/Design</div>
+                <div class="service-card">Mobile App Development</div>
+                <div class="service-card">Custom Software Development</div>
+                <div class="service-card">Graphics Design (UI/UX)</div>
+                <div class="service-card">Software Development</div>
+                <div class="service-card">Testing and QA</div>
+                <div class="service-card">UI/UX Design</div>
+                <div class="service-card">Digital Transformation</div>
+                <div class="service-card">IT Support</div>
+                <div class="service-card">Expert Project Management</div>
+                <div class="service-card">SaaS (Software as a Service)</div>
+                <div class="service-card">Serverless Application (Cloud)</div>
+                <div class="service-card">Legacy Software Modernization</div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ------------------------------technologies page -->
+
+    <!-- <section class="hero">
+        <h1>Innovating the Future of Technology</h1>
+        <p>Explore our cutting-edge solutions and services</p>
+        <div class="cta-buttons">
+            <a href="services.html" class="btn btn-primary">Our Services</a>
+            <a href="contact.html" class="btn btn-secondary">Contact Us</a>
+        </div>
+    </section> -->
+
+    <section class="technologies">
+        <div class="container">
+            <h2>Technologies We Use</h2>
+            <div class="technology-cards">
+                <div class="technology-card">
+                    <div class="icon">📱</div>
+                    <div>Mobile: iOS, Android, React Native, Flutter</div>
+                </div>
+                <div class="technology-card">
+                    <div class="icon">💻</div>
+                    <div>Frontend: Angular, React.js, HTML5, CSS3, JavaScript</div>
+                </div>
+                <div class="technology-card">
+                    <div class="icon">🔙</div>
+                    <div>Backend: PHP, Node.js, .NET, Python</div>
+                </div>
+                <div class="technology-card">
+                    <div class="icon">🛒</div>
+                    <div>Ecommerce and CMS: WordPress, MongoDB</div>
+                </div>
+                <div class="technology-card">
+                    <div class="icon">🗂️</div>
+                    <div>Frameworks: MEAN, MERN</div>
+                </div>
+                <div class="technology-card">
+                    <div class="icon">🤖</div>
+                    <div>AI & Machine Learning</div>
+                </div>
+                <div class="technology-card">
+                    <div class="icon">☁️</div>
+                    <div>Cloud: AWS, Azure</div>
+                </div>
+                <div class="technology-card">
+                    <div class="icon">📊</div>
+                    <div>Data Analytics: Power BI, QlikView</div>
+                </div>
+                <div class="technology-card">
+                    <div class="icon">🔍</div>
+                    <div>Testing: Selenium, Cypress</div>
+                </div>
+                <div class="technology-card">
+                    <div class="icon">🔗</div>
+                    <div>API: Postman, SoapUI</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="content">
+        <h1>References</h1>
+        <div class="container">
+            <div class="reference">
+                <h2>Client Testimonial</h2>
+                <p><strong>Jane Doe</strong>, CEO of Tech Innovations: "Digispect Technologies provided us with outstanding service and innovative solutions. Their expertise helped us streamline our operations and achieve significant growth."</p>
+            </div>
+            <div class="reference">
+                <h2>Case Study: Project Alpha</h2>
+                <p>We partnered with Digispect Technologies to develop Project Alpha, which resulted in a 40% increase in operational efficiency. Their approach was thorough and highly effective, demonstrating their deep understanding of our needs.</p>
+            </div>
+            <div class="reference">
+                <h2>Award: Best IT Solutions Provider</h2>
+                <p>Digispect Technologies was recognized as the Best IT Solutions Provider in 2024. This award highlights our commitment to excellence and innovation in the technology sector.</p>
+            </div>
+        </div>
+    </section>
+    <div class="main-content">
+        <div class="contact-container">
+            <div class="contact-form">
+                <h2>Contact Us</h2>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Mobile No</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+                <p id="responseMessage" class="hidden"></p>
+            </div>
+
+
+            <div class="contact-details">
+                <h5>Registered Office</h5>
+                <p>MEGH, MALHAR, Chh, CIDCO Cannought, Cidco, Chhatrapati
+                    <br> Sambhajinagar (Aurangabad), Maharashtra 431003</p>
+                <h5>Email</h5>
+                <p>DIGVI2009@GMAIL.COM</a>
+                </p>
+                <h5>Contact</h5>
+                <p>+91-7709441810</p>
+
+                <div class="social-media">
+                    <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+
+        <p>Contact us at: <a href="mailto:info@digispect.com">info@digispect.com</a></p>
+        <!-- <p>Follow us on social media: [Social Media Links]</p> -->
+
+    </footer>
+</body>
+
+</html>

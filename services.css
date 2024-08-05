@@ -1,0 +1,142 @@
+body, h1, h2, p, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa; /* Light background color */
+    margin: 0;
+}
+
+/* Header styles */
+header {
+    background: #ffffff; /* White background */
+    color: #333;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #007bff; /* Primary color */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #007bff; /* Primary color */
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #0056b3; /* Darker shade on hover */
+}
+
+/* Services section styles */
+.services {
+    background: #ffffff; /* White background */
+    color: #333;
+    padding: 60px 0;
+}
+
+.services h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+.service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.service-card {
+    background: #f1f1f1; /* Light grey background */
+    color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    flex: 1 1 calc(33% - 40px); /* Three columns with spacing */
+    text-align: center; /* Center align text */
+    font-size: 16px;
+}
+
+.service-card:hover {
+    background: #e2e2e2; /* Slightly darker on hover */
+}
+
+/* Footer styles */
+footer {
+    background: #ffffff; /* White background */
+    color: #333;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+}
+
+footer p {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+footer p a {
+    color: #007bff; /* Primary color */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer p a:hover {
+    color: #0056b3; /* Darker shade on hover */
+}
+
+.service-card {
+background: #ffffff; /* Change background to white */
+color: #333; /* Keep text color for contrast */
+padding: 20px;
+border-radius: 8px;
+box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+flex: 1 1 calc(33% - 40px); /* Three columns with spacing */
+text-align: center; /* Center align text */
+font-size: 16px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .service-card {
+        flex: 1 1 calc(50% - 20px); /* Two columns with spacing */
+    }
+}
+
+@media (max-width: 480px) {
+    .service-card {
+        flex: 1 1 100%; /* Single column layout */
+    }
+}
